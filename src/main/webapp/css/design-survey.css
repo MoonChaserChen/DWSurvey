@@ -432,6 +432,12 @@ textarea{
 #salaryQuModel:hover .dwToolbar_icon,#salaryQuModel.hover .dwToolbar_icon{
 	background-position: -511px -320px;
 }
+#schoolQuModel .dwToolbar_icon{
+	background-position: -456px -250px;
+}
+#schoolQuModel:hover .dwToolbar_icon,#schoolQuModel.hover .dwToolbar_icon{
+	background-position: -456px -320px;
+}
 #dateQuModel .dwToolbar_icon{
 	background-position: -630px -250px;
 }

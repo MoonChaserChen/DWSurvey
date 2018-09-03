@@ -893,6 +893,7 @@ $(document).ready(function(){
 		saveSurvey(function(){
 			isSaveProgress=false;
 			notify("保存成功",1000);
+            window.location.href = ctx + "/design/my-survey.action";
 		});
 
 	});
@@ -2408,7 +2409,9 @@ function saveFillblank(quItemBody,callback){
 		
 		var answerInputWidth=quItemBody.find("input[name='answerInputWidth']").val();
 		var answerInputRow=quItemBody.find("input[name='answerInputRow']").val();
-		
+
+		var inputId = quItemBody.find(".quFillblankAnswerInput").attr("id");
+
 		var contactsAttr=quItemBody.find("input[name='contactsAttr']").val();
 		var contactsField=quItemBody.find("input[name='contactsField']").val();
 		
@@ -2418,6 +2421,7 @@ function saveFillblank(quItemBody,callback){
 		data+="&isRequired="+isRequired+"&hv="+hv+"&randOrder="+randOrder+"&cellCount="+cellCount;
 		data+="&answerInputWidth="+answerInputWidth+"&answerInputRow="+answerInputRow;
 		data+="&contactsAttr="+contactsAttr+"&contactsField="+contactsField+"&checkType="+checkType;
+		data += "&inputId=" + inputId;
 		
 		var quTitleSaveTag=quItemBody.find("input[name='quTitleSaveTag']").val();
 		if(quTitleSaveTag==0){

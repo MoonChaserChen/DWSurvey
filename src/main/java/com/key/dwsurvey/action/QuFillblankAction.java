@@ -15,6 +15,7 @@ import com.key.dwsurvey.entity.Question;
 import com.key.dwsurvey.entity.QuestionLogic;
 
 import com.key.dwsurvey.service.AnFillblankManager;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.convention.annotation.*;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Restrictions;
@@ -76,6 +77,7 @@ public class QuFillblankAction extends ActionSupport{
 		String hv=request.getParameter("hv");
 		String randOrder=request.getParameter("randOrder");
 		String cellCount=request.getParameter("cellCount");
+		String inputId = request.getParameter("inputId");
 		if("".equals(quId)){
 			quId=null;
 		}
@@ -103,6 +105,7 @@ public class QuFillblankAction extends ActionSupport{
 		entity.setHv(Integer.parseInt(hv));
 		entity.setRandOrder(Integer.parseInt(randOrder));
 		entity.setCellCount(Integer.parseInt(cellCount));
+		entity.setAnswerInputId(StringUtils.isEmpty(inputId) ? "" : inputId);
 		checkType=(checkType==null || "".equals(checkType))?"NO":checkType;
 		entity.setCheckType(CheckType.valueOf(checkType));
 		Map<String, Object> quLogicIdMap=WebUtils.getParametersStartingWith(request, "quLogicId_");

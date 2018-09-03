@@ -18,6 +18,12 @@
 <link rel="stylesheet" href="${ctx }/js/plugs/colpick-jQuery/css/colpick.css" type="text/css"/>
 
 <link href="${ctx}/js/plugs/validate/jquery.validate.css" type="text/css" rel="stylesheet" />
+
+<%--选择学校--%>
+<script type="text/javascript" src="${ctx }/js/selSchool/chinaUniversityList.js"></script>
+<script type="text/javascript" src="${ctx }/js/selSchool/chinaUniversitySelect.js"></script>
+<link href="${ctx }/css/select-school.css" rel="stylesheet" type="text/css" />
+
 <script type="text/javascript">
 $(document).ready(function(){
 	
@@ -1306,7 +1312,12 @@ label.error{
 															<textarea name="qu_${en.quType }_${en.id }" rows="${en.answerInputRow }" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;"class="inputSytle_2 fillblankInput" ></textarea>
 														</c:when>
 														<c:otherwise>
-															<input type="text" name="qu_${en.quType }_${en.id }" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;" class="inputSytle_1 fillblankInput" >
+															<input type="text" name="qu_${en.quType }_${en.id }" style="width:${empty(en.answerInputWidth)?'300':en.answerInputWidth}px;"
+																   class="inputSytle_1 fillblankInput" id="${en.answerInputId}"
+																	<c:if test='${en.answerInputId == "selectSchool"}'>
+																   		readonly="readonly"
+																	</c:if>
+															>
 														</c:otherwise>
 													</c:choose>
 													<div class="dwComEditMenuBtn" ></div>
@@ -1919,7 +1930,6 @@ if(errorcode=="3"){
 	var errorHtml="<div class=\"errorItem\" style=\"padding-left:30px;\" ><label for=\"\" class=\"error\">验证码不正确，请重新回答！</label></div>";
 	$("#dwSurveyHeader").append(errorHtml);
 }
-
 </script>
 <%@ include file="/WEB-INF/page/layouts/other.jsp"%>
 
@@ -1930,5 +1940,21 @@ if(errorcode=="3"){
 	</div>
 <!-- Diaowen.net Button END -->
 
+<%--选择学校弹窗--%>
+<div id="choose-box-wrapper">
+	<div id="choose-box">
+		<div id="choose-box-title">
+			<span>选择学校</span>
+		</div>
+		<p style="font-size:12px;text-indent:1em;"><span>搜索：</span><input id="searchSchool" type="text" value="搜索学校"/></p>
+		<div id="choose-a-province">
+		</div>
+		<div id="choose-a-school">
+		</div>
+		<div id="choose-box-bottom">
+			<input type="botton" id='close' value="关闭" />
+		</div>
+	</div>
+</div>
 </body>
 </html>

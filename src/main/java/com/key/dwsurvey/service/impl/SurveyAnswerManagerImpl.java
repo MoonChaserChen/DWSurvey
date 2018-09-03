@@ -11,6 +11,7 @@ import com.key.dwsurvey.entity.AnChenFbk;
 import com.key.dwsurvey.entity.SurveyDetail;
 import com.key.dwsurvey.service.AnScoreManager;
 import com.key.dwsurvey.service.SurveyDirectoryManager;
+import org.apache.commons.lang3.time.DateFormatUtils;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -108,6 +109,7 @@ public class SurveyAnswerManagerImpl extends
 	private AnScoreManager anScoreManager;
 	@Autowired
 	private SurveyDirectoryManager directoryManager;
+
 
 	@Override
 	public void setBaseDao() {
@@ -281,20 +283,18 @@ public class SurveyAnswerManagerImpl extends
 
 	@Override
 	public String exportXLS(String surveyId, String savePath) {
+        SurveyDirectory survey = directoryManager.getSurvey(surveyId);
+        String surveyName = survey.getSurveyName();
+        String currentDay = DateFormatUtils.format(new Date(), "yyyy年MM月dd日");
 		String basepath = surveyId + "";
 		String urlPath = "/file/" + basepath + "/";// 下载所用的地址
 		String path = urlPath.replace("/", File.separator);// 文件系统路径
-		// File.separator +
-		// "file" +
-		// File.separator+basepath
-		// + File.separator;
 		savePath = savePath + path;
 		File file = new File(savePath);
 		if (!file.exists())
 			file.mkdirs();
 
-		SurveyDirectory surveyDirectory = directoryManager.getSurvey(surveyId);
-		String fileName = surveyId + "_exportSurvey.xls";
+		String fileName = currentDay + "-" + surveyName + ".xls";
 
 		XLSExportUtil exportUtil = new XLSExportUtil(fileName, savePath);
 		Criterion cri1 = Restrictions.eq("surveyId",surveyId);
@@ -318,8 +318,8 @@ public class SurveyAnswerManagerImpl extends
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return urlPath + fileName;
-	}
+        return urlPath + fileName;
+    }
 
 	private void exportXLSRow(XLSExportUtil exportUtil,String surveyAnswerId, List<Question> questions,SurveyAnswer surveyAnswer) {
 		int cellIndex = 0;

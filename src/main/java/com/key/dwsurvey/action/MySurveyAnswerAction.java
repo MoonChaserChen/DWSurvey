@@ -3,6 +3,7 @@ package com.key.dwsurvey.action;
 import com.key.common.base.entity.User;
 import com.key.common.base.service.AccountManager;
 import com.key.common.plugs.page.Page;
+import com.key.common.utils.URLEncodeUtils;
 import com.key.common.utils.web.Struts2Utils;
 import com.key.dwsurvey.entity.Question;
 import com.key.dwsurvey.entity.SurveyAnswer;
@@ -127,7 +128,10 @@ public class MySurveyAnswerAction extends ActionSupport{
 	    		if(survey!=null){
 	    			savePath=surveyAnswerManager.exportXLS(surveyId,savePath);
 //	    			request.setAttribute("downPath", savePath);
-	    			response.sendRedirect(request.getContextPath()+savePath);
+					// TODO 这里的中文
+					String basePath = request.getSession().getServletContext().getRealPath("/");
+					String downLoadUrl = request.getContextPath() + savePath;
+	    			response.sendRedirect(URLEncodeUtils.encodeChinese(downLoadUrl));
 	    		}
 	    	}
 		}catch (Exception e) {

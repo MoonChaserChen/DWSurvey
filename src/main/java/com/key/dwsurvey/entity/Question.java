@@ -48,6 +48,7 @@ public class Question extends IdEntity{
 	private String parentQuId;
 	// 是非题的选项
 	private YesnoOption yesnoOption;
+	private String answerInputId;
 	// 是否必答 0非必答 1必答
 	private Integer isRequired=0;
 	//说明的验证方式
@@ -164,6 +165,14 @@ public class Question extends IdEntity{
 	public void setYesnoOption(YesnoOption yesnoOption) {
 		this.yesnoOption = yesnoOption;
 	}
+
+	public String getAnswerInputId() {
+		return answerInputId;
+	}
+	public void setAnswerInputId(String answerInputId) {
+		this.answerInputId = answerInputId;
+	}
+
 	public Integer getIsRequired() {
 		return isRequired;
 	}

@@ -46,7 +46,7 @@
             'print', 'preview', 'searchreplace', 'help', 'drafts'
         ]]*/
     	,toolbars:[
-               ['Bold','Underline','StrikeThrough','removeformat','|','InsertUnorderedList','InsertOrderedList','|','Link','Unlink','|','simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map','|','Source','FullScreen']
+               ['Bold','Underline','StrikeThrough','removeformat','| ','fontfamily', 'fontsize','| ','InsertUnorderedList','InsertOrderedList','|','Link','Unlink','|','simpleupload', 'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map','|','Source','FullScreen']
          ]
         //当鼠标放在工具栏上时显示的tooltip提示,留空支持自动多语言配置，否则以配置值为准
         //,labelMap:{
