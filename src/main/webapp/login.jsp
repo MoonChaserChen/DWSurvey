@@ -81,7 +81,7 @@ label.error{
 				
 					<div class="dw_login_logo">
 						<h1 class="f1">DIAOWEN</h1>
-						<h2 class="f2" style="width: 460px;">调问专业<span class="f3">、</span>开源<span class="f3">、</span>实用的调研方式</h2>
+						<%--<h2 class="f2" style="width: 460px;">调问专业<span class="f3">、</span>开源<span class="f3">、</span>实用的调研方式</h2>--%>
 					</div>
 					
 					
@@ -161,7 +161,7 @@ label.error{
 								</div> -->
 						</div>
 						<div class="dlcRight">
-							<%@ include file="/WEB-INF/page/layouts/admin-info.jsp"%>
+							<%--<%@ include file="/WEB-INF/page/layouts/admin-info.jsp"%>--%>
 						</div>
 						</div>
 						</form>
@@ -198,7 +198,7 @@ label.error{
 	
 	<div class="dw_foot" style="padding-top:15px;">
 		<!-- 必须保留声明 start -->
-	<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">
+	<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;display: none;">
 		Powered by <a href="http://www.dwsurvey.net" style="text-decoration: none;color: gray;">DWSurvey</a>
 		&nbsp;&nbsp;&nbsp;Copyright © 2012-2017
 		<a href="http://www.diaowen.net" style="text-decoration: none;color: rgb(53, 117, 136);">调问网</a>

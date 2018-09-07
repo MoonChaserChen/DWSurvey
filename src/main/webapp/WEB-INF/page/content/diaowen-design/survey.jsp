@@ -38,7 +38,7 @@
 <%-- <img alt="调问网" src="${ctx }/images/logo/logo.jpg" > --%>
 <!-- <div id="header_title">DIAOWEN-在线问卷编辑器</div> -->
 <div class="header_Item header_logo">
-		<a href="${ctx }/"><img alt="调问网" src="${ctx }/images/logo/LOGO.png" ></a>
+		<a href="${ctx }/" style="display: none"><img alt="调问网" src="${ctx }/images/logo/LOGO.png" ></a>
 		<!-- <div style="font-family: '微软雅黑';font-size:26px;padding-left:10px;">DIAOWEN&nbsp;&nbsp; </div>-->
 		&nbsp;&nbsp;
 		<span style="font-family: '微软雅黑';font-size: 16px;line-height: 46px;" id="pageHeaderSpan">在线问卷编辑器</span>
@@ -2682,7 +2682,7 @@
 <%@ include file="/WEB-INF/page/layouts/other.jsp"%>
 
 <div style="text-align: center;">
-<div class="dw_foot" style="padding-bottom: 30px;">
+<div class="dw_foot" style="padding-bottom: 30px;display: none">
 	<div class="footer-copyright" style="color: gray;padding-top: 0px;font-size: 16px;">
 		Powered by <a href="http://www.dwsurvey.net" target="_blank" style="text-decoration: none;color: gray;">DWSurvey</a>&nbsp;&nbsp;&nbsp;
 		Copyright © 2012-2017

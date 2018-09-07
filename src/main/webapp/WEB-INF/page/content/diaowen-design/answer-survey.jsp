@@ -1886,7 +1886,7 @@ label.error{
 </div>
 
 
-<div class="footer-copyright footer-pb" style="color: gray;padding-bottom: 5px;">
+<div class="footer-copyright footer-pb" style="color: gray;padding-bottom: 5px;display: none">
 		<%--尊重开源、保留声明，感谢您的大力支持--%>
 		Powered by <a href="http://www.diaowen.net" style="text-decoration: none;color: gray;">DWSurvey</a>&nbsp;
 		<%-- 自定义内容版：已为您准备好内容版权声明模版，您可以为自己的卷子加上内容版权声明 --%>
