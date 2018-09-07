@@ -134,13 +134,7 @@ public class TwoDimensionCode {
 			} else {
 				throw new Exception("QRCode content bytes length = " + contentBytes.length + " not in [0, 800].");
 			}
-//			Image logo = ImageIO.read(new URL("http://www.diaowen.net/images/logo/200-200.png"));
-			Image logo = ImageIO.read(new URL("http://md-1251413566.cossh.myqcloud.com/dog_queen.jpg"));
-			int widthLogo = logo.getWidth(null)>bufImg.getWidth()*2/10?(bufImg.getWidth()*2/10):logo.getWidth(null),
-					heightLogo = logo.getHeight(null)>bufImg.getHeight()*2/10?(bufImg.getHeight()*2/10):logo.getWidth(null);
-			int x = (bufImg.getWidth() - widthLogo) / 2;
-			int y = (bufImg.getHeight() - heightLogo) / 2;
-			gs.drawImage(null, x, y, widthLogo, heightLogo, null);
+			gs.drawImage(null, 56, 56, 27, 27, null);
 			gs.dispose();
 			bufImg.flush();
 		} catch (Exception e) {
