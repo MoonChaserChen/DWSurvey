@@ -893,7 +893,7 @@ $(document).ready(function(){
 		saveSurvey(function(){
 			isSaveProgress=false;
 			notify("保存成功",1000);
-            window.location.href = ctx + "/design/my-survey.action";
+            doPublish();
 		});
 
 	});
@@ -909,6 +909,44 @@ $(document).ready(function(){
 		});
 		
 	});
+
+	function doPublish() {
+        $("body").append("<div id=\"myDialogRoot\"><div class='dialogMessage'>成功保存，发布问卷吗？</div></div>");
+        var myDialog=$( "#myDialogRoot" ).dialog({
+            width:500,
+            height:230,
+            autoOpen: true,
+            modal:true,
+            position:["center","center"],
+            title:"提示",
+            resizable:false,
+            draggable:false,
+            closeOnEscape:false,
+            //show: {effect:"blind",direction:"up",duration: 500},
+            //hide: {effect:"blind",direction:"left",duration: 200},
+            buttons: {
+                "OK":{
+                    text: "发布",
+                    addClass:'dialogMessageButton',
+                    click: function() {
+                        $("#publishBtn").click();
+                    }
+                },
+                "CENCEL":{
+                    text: "取消",
+                    click: function() {
+                        window.location.href = ctx + "/design/my-survey.action";
+                    }
+                }
+            },
+            open:function(event,ui){
+                $(".ui-dialog-titlebar-close").hide();
+            },
+            close:function(event,ui){
+                $("#myDialogRoot").remove();
+            }
+        });
+	}
 	
 	function saveSurvey(callback){
 		isSaveProgress=true;

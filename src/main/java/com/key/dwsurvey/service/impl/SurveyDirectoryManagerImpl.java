@@ -152,6 +152,8 @@ public class SurveyDirectoryManagerImpl extends BaseServiceImpl<SurveyDirectory,
 		SurveyDirectory directory=get(id);
 		if(userId.equals(directory.getUserId())){
 			getSurveyDetail(id,directory);
+			if (directory.getAnswerNum() == null)
+				directory.setAnswerNum(0);
 		    return directory;
 		}
 		return null;

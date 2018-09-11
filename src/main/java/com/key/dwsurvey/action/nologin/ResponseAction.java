@@ -143,7 +143,7 @@ public class ResponseAction extends ActionSupport {
 
 		if (directory.getSurveyQuNum() <= 0
 				|| directory.getSurveyState() != 1 ||
-				(anserNum!=null && ynEndNum==1 && anserNum > endNum ) ||
+				(anserNum!=null && ynEndNum==1 && anserNum >= endNum ) ||
 				(endTime!=null && ynEndTime==1 && endTime.getTime() < (new Date().getTime())) ){
 			request.setAttribute("surveyName", "目前该问卷已暂停收集，请稍后再试");
 			request.setAttribute("msg", "目前该问卷已暂停收集，请稍后再试");

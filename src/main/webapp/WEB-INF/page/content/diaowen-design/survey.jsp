@@ -22,6 +22,7 @@
 <script type="text/javascript" src="${ctx }/js/dw/address.js"></script>
 <script language="javascript" type="text/javascript" src="${ctx }/js/plugs/My97DatePickerBeta/My97DatePicker/WdatePicker.js"></script>
 <link href="${ctx }/css/design-survey.css" rel="stylesheet" type="text/css" />
+<link href="${ctx }/css/dw-user.css" rel="stylesheet" type="text/css" />
 
 <!--[if lt IE 7]><link rel="stylesheet" href="ie-stuff.css" type="text/css" media="screen"/><![endif]--> 
 <script type="text/javascript">
