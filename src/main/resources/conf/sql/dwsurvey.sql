@@ -723,6 +723,7 @@ CREATE TABLE `t_question` (
   `tag` int(11) DEFAULT NULL,
   `visibility` int(11) DEFAULT NULL,
   `yesno_option` int(11) DEFAULT NULL,
+  `answer_input_id` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
