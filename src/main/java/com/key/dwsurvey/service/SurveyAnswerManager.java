@@ -25,7 +25,11 @@ public interface SurveyAnswerManager extends BaseService<SurveyAnswer, String>{
 	public void saveAnswer(SurveyAnswer surveyAnswer, Map<String, Map<String, Object>> quMaps);
 
 	public List<Question> findAnswerDetail(SurveyAnswer answer);
-	
+
+	Long getCount(String surveyId);
+
+	Integer getEndNum(String surveyId);
+
 	public List<SurveyAnswer> answersByIp(String surveyId, String ip);
 	
 	public SurveyAnswer getTimeInByIp(SurveyDetail surveyDetail, String ip);

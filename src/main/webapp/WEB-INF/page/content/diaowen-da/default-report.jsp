@@ -828,7 +828,7 @@ function substring(json) {
 				<div class="surveyCollectTop">
 					<div class="surveyCollectTitleDiv">
 						<span class="surveyCollectTitle">${directory.surveyName }</span>
-						<div class="scmTabRight" >
+						<div class="scmTabRight" style="display: none;">
 							<a href="" class="sbtn25 sbtn25_2">停止收集</a>
 						</div>
 					</div>

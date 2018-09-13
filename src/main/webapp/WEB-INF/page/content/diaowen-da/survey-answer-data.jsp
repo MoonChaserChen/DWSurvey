@@ -72,7 +72,7 @@
 				<div class="surveyCollectTop">
 					<div class="surveyCollectTitleDiv">
 						<span class="surveyCollectTitle">${survey.surveyName }</span>
-						<div class="scmTabRight" >
+						<div class="scmTabRight" style="display: none;">
 							<c:choose>
 								<c:when test="${survey.surveyState eq 0 }">
 									<a href="" class="surveyStateBtn sbtn25 sbtn25_2" style="color: #599fd1;">开始收集</a>

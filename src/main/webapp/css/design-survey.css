@@ -396,6 +396,13 @@ textarea{
 	background-position: -0px -320px;
 }
 
+#mobileQuModel .dwToolbar_icon{
+	background-position: -58px -250px;
+}
+#mobileQuModel:hover .dwToolbar_icon,#mobileQuModel.hover .dwToolbar_icon{
+	background-position: -58px -320px;
+}
+
 #genderQuModel .dwToolbar_icon{
 	background-position: -568px -250px;
 }

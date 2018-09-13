@@ -188,7 +188,12 @@ public class ResponseAction extends ActionSupport {
 		String formFrom = request.getParameter("form-from");
 		try {
 			String ipAddr = ipService.getIp(request);
-			long ipNum = surveyAnswerManager.getCountByIp(surveyId, ipAddr);
+            Long answeredCount = surveyAnswerManager.getCount(surveyId);
+            Integer endNum = surveyAnswerManager.getEndNum(surveyId);
+            if (answeredCount >= endNum) {
+                return RELOAD_ANSWER_FAILURE;
+            }
+            long ipNum = surveyAnswerManager.getCountByIp(surveyId, ipAddr);
 			SurveyDirectory directory = directoryManager.getSurvey(surveyId);
 			SurveyDetail surveyDetail = directory.getSurveyDetail();
 			int refreshNum = surveyDetail.getRefreshNum();

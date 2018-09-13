@@ -7,6 +7,7 @@ import java.util.*;
 import com.key.common.QuType;
 import com.key.common.utils.web.Struts2Utils;
 import com.key.dwsurvey.dao.SurveyAnswerDao;
+import com.key.dwsurvey.dao.SurveyDetailDao;
 import com.key.dwsurvey.entity.AnChenFbk;
 import com.key.dwsurvey.entity.SurveyDetail;
 import com.key.dwsurvey.service.AnScoreManager;
@@ -79,6 +80,8 @@ public class SurveyAnswerManagerImpl extends
 
 	@Autowired
 	private SurveyAnswerDao surveyAnswerDao;
+	@Autowired
+	private SurveyDetailDao surveydetailDao;
 	@Autowired
 	private QuestionManager questionManager;
 	@Autowired
@@ -269,6 +272,18 @@ public class SurveyAnswerManagerImpl extends
 		String hql = "select count(*) from SurveyAnswer x where x.surveyId=? and x.ipAddr=?";
 		Long count = (Long) surveyAnswerDao.findUniObjs(hql, surveyId, ip);
 		return count;
+	}
+
+	@Override
+	public Long getCount(String surveyId) {
+		String hql = "select count(*) from SurveyAnswer x where x.surveyId = ?";
+		return (Long) surveyAnswerDao.findUniObjs(hql, surveyId);
+	}
+
+	@Override
+	public Integer getEndNum(String surveyId) {
+		String hql = "select x.endNum from SurveyDetail x where x.dirId = ?";
+		return (Integer) surveydetailDao.findUniObjs(hql, surveyId);
 	}
 
 	@Override

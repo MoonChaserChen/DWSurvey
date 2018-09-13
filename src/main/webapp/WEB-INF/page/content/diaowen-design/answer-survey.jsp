@@ -24,6 +24,8 @@
 <script type="text/javascript" src="${ctx }/js/selSchool/chinaUniversitySelect.js"></script>
 <link href="${ctx }/css/select-school.css" rel="stylesheet" type="text/css" />
 
+<script type="text/javascript" src="${ctx }/js/input-check.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
 	
@@ -503,6 +505,25 @@ $(document).ready(function(){
 				quItemBody.find(".quCoItem").append(errorHtml);
 			}
 		}
+
+
+		if (validateStatus) {
+            // 验证邮箱
+            var email = $("#emailInput").val();
+            if (email && !isEmail(email)) {
+                var emailError ="<div class=\"errorItem\"><label for=\"\" class=\"error\">邮件格式错误！</label></div>";
+                $("#emailInput").parents(".quCoItem").append(emailError);
+                validateStatus = false;
+            }
+            // 验证手机
+			var mobile = $("#mobileInput").val();
+            if (mobile && !isMobile(mobile)) {
+                var mobileError ="<div class=\"errorItem\"><label for=\"\" class=\"error\">手机号格式错误！</label></div>";
+                $("#mobileInput").parents(".quCoItem").append(mobileError);
+                validateStatus = false;
+            }
+        }
+
 		return validateStatus;
 	}
 	
