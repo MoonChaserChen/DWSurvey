@@ -54,7 +54,7 @@
 <div id="tools">
 <div class="tools_tabs">
 	<div class="tools_tabs_left"><ul><li class="current" id="tools_tab1_li">基本</li></ul></div>
-	<div class="tools_tabs_right"><ul><li style="padding: 0px;font-size: 12px;line-height: 22px;"><a href="http://support.diaowen.net/" target="_black" style="text-decoration: none;color: gray;">帮助</a></li></ul></div>
+	<div class="tools_tabs_right" style="display: none;"><ul><li style="padding: 0px;font-size: 12px;line-height: 22px;"><a href="http://support.diaowen.net/" target="_black" style="text-decoration: none;color: gray;">帮助</a></li></ul></div>
 </div>
 
 <div class="tools_contents">
@@ -91,8 +91,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -169,8 +169,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -262,8 +262,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -322,8 +322,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -394,7 +394,7 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>--%>
 											<!-- <li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li> -->
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
@@ -467,8 +467,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -553,8 +553,8 @@
 									<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 									</div>
@@ -617,8 +617,8 @@
 									<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 									</div>
@@ -678,8 +678,8 @@
 									<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 									</div>
@@ -756,8 +756,8 @@
 									<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 									</div>
@@ -854,8 +854,8 @@
 									<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 									</div>
@@ -932,8 +932,8 @@
 									<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 									</div>
@@ -1043,8 +1043,8 @@
 									<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class=dwQuIcon></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo"></div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 									</div>
@@ -1294,8 +1294,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -1426,8 +1426,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -1561,8 +1561,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -1639,8 +1639,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -1720,7 +1720,7 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>--%>
 											<%-- <li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li> --%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
@@ -1916,8 +1916,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -1992,8 +1992,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -2086,8 +2086,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -2180,8 +2180,8 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
-											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li>--%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
 								</div>
@@ -2276,7 +2276,7 @@
 								<div class="surveyQuItemLeftTools">
 										<ul class="surveyQuItemLeftToolsUl">
 											<li title="移动排序" class="dwQuMove"><div class="dwQuIcon"></div></li>
-											<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>
+											<%--<li title="设置" class="dwQuSet"><div class="dwQuIcon"></div></li>--%>
 											<%-- <li title="逻辑" class="dwQuLogic"><div class="dwQuIcon"><div class="quLogicInfo">${fn:length(en.questionLogics) > 0?fn:length(en.questionLogics) :'' }</div></div></li> --%>
 											<li title="删除" class="dwQuDelete"><div class="dwQuIcon"></div></li>
 										</ul>
@@ -2614,7 +2614,7 @@
 						<div class="p_DialogContentTitle">何时结束</div>
 						<div class="p_DialogContentRoot">
 								<div class="p_DialogContentItem"><label><input type="checkbox" name="ynEndNum" value="1"> 收集到&nbsp;<input type="text" size="12"  class="inputSytle_1" name="endNum">&nbsp;份答卷时结束</label></div>
-								<div class="p_DialogContentItem"><label><input type="checkbox" name="ynEndTime" value="1"> 到&nbsp;<input type="text" size="20"  class="inputSytle_1 Wdate" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" name="endTime">&nbsp;时结束 </label></div>
+								<div class="p_DialogContentItem" style="display: none;"><label><input type="checkbox" name="ynEndTime" value="1"> 到&nbsp;<input type="text" size="20"  class="inputSytle_1 Wdate" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" name="endTime">&nbsp;时结束 </label></div>
 						</div>
 					</div>
 

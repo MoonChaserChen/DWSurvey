@@ -715,7 +715,7 @@ $(document).ready(function(){
 						<div class="p_DialogContentTitle">何时结束</div>
 						<div class="p_DialogContentRoot">
 								<div class="p_DialogContentItem"><label><input type="checkbox" name="ynEndNum" value="1"> 收集到&nbsp;<input value="${survey.surveyDetail.endNum}" name="endNum" type="text" size="10"  class="inputSytle_1">&nbsp;份答卷时结束</label></div>
-								<div class="p_DialogContentItem"><label><input type="checkbox" name="ynEndTime" value="1"> 到&nbsp;<input value="${survey.surveyDetail.endTime}" name="endTime" type="text" size="16"  class="inputSytle_1 Wdate" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" >&nbsp;时结束 </label></div>
+								<div class="p_DialogContentItem" style="display: none"><label><input type="checkbox" name="ynEndTime" value="1"> 到&nbsp;<input value="${survey.surveyDetail.endTime}" name="endTime" type="text" size="16"  class="inputSytle_1 Wdate" onfocus="WdatePicker({minDate:'%y-%M-{%d+1}',dateFmt:'yyyy-MM-dd HH:mm:ss'})" >&nbsp;时结束 </label></div>
 						</div>
 					</div>
 				</div>
@@ -944,7 +944,7 @@ $(document).ready(function(){
 						<div class="p_DialogContentTitle">何时结束</div>
 						<div class="p_DialogContentRoot">
 								<div class="p_DialogContentItem"><label><input type="checkbox"> 收集到&nbsp;<input type="text" size="8"  class="inputSytle_1">&nbsp;份答卷时结束</label></div>
-								<div class="p_DialogContentItem"><label><input type="checkbox"> 到&nbsp;<input type="text" size="2"  class="inputSytle_1">&nbsp;时结束 </label></div>
+								<div class="p_DialogContentItem" style="display: none"><label><input type="checkbox"> 到&nbsp;<input type="text" size="2"  class="inputSytle_1">&nbsp;时结束 </label></div>
 						</div>
 					</div>
 					<div class="p_DialogContent">
@@ -1795,7 +1795,7 @@ $(document).ready(function(){
 	</div>
 
 
-	<div class="footer-copyright footer-pb" style="color: gray;padding-bottom: 5px;">
+	<div class="footer-copyright footer-pb" style="color: gray;padding-bottom: 5px;display: none;">
 		<%--尊重开源、保留声明，感谢您的大力支持--%>
 		Powered by <a href="http://www.diaowen.net" style="text-decoration: none;color: gray;">DWSurvey</a>&nbsp;
 	</div>

@@ -15,6 +15,11 @@
 
 <link href="${ctx}/js/plugs/validate/jquery.validate.css" type="text/css" rel="stylesheet" />
 
+<%--选择学校--%>
+<script type="text/javascript" src="${ctx }/js/selSchool/chinaUniversityList.js"></script>
+<script type="text/javascript" src="${ctx }/js/selSchool/chinaUniversitySelect.js"></script>
+<link href="${ctx }/css/m-select-school.css" rel="stylesheet" type="text/css" />
+
 <script type="text/javascript">
 $(document).ready(function(){
 	
@@ -269,7 +274,11 @@ $(document).ready(function(){
 												 <textarea name="qu_${en.quType }_${en.id }" rows="${en.answerInputRow }" class="inputSytle_2 fillblankInput" ></textarea>
 											 </c:when>
 											 <c:otherwise>
-												 <input type="text" name="qu_${en.quType }_${en.id }" class="inputSytle_1 fillblankInput" >
+												 <input type="text" name="qu_${en.quType }_${en.id }" class="inputSytle_1 fillblankInput" id="${en.answerInputId}"
+												 <c:if test='${en.answerInputId == "selectSchool"}'>
+														readonly="readonly"
+												 </c:if>
+												 >
 											 </c:otherwise>
 										 </c:choose>
 
@@ -829,7 +838,7 @@ $(document).ready(function(){
 		</div>
   </div>
 
-  <div data-role="footer" >
+  <div data-role="footer" style="display: none;">
 	  <%--尊重开源、保留声明，感谢您的大力支持--%>
   	<h3>Powered by <a href="http://diaowen.net/index-m.jsp" style="text-decoration: none;" rel="external">DWSurvey</a></h3>
   </div>
@@ -1491,5 +1500,21 @@ if(errorcode=="3"){
 </script>
 
 
+<%--选择学校弹窗--%>
+<div id="choose-box-wrapper">
+    <div id="choose-box">
+        <div id="choose-box-title">
+            <span>选择学校</span>
+        </div>
+        <p style="font-size:12px;text-indent:1em;"><span>搜索：</span><input id="searchSchool" type="text" value="搜索学校"/></p>
+        <div id="choose-a-province">
+        </div>
+        <div id="choose-a-school">
+        </div>
+        <div id="choose-box-bottom">
+            <input type="botton" id='close' value="关闭" />
+        </div>
+    </div>
+</div>
 </body>
 </html>

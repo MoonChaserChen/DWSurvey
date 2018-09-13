@@ -56,7 +56,7 @@
 	</p>
   </div>
 
-  <div data-role="footer">
+  <div data-role="footer" style="display: none;">
       <%--尊重开源、保留声明，感谢您的大力支持--%>
   <h3><a href="http://www.diaowen.net/index-m.jsp" style="text-decoration: none;" rel="external">调问网</a> 提供支持</h3>
   </div>

@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>调问-专业且开源的问卷表单系统</title>
+<title>问卷管理后台</title>
 <meta name="description" content="调问问卷表单－开源且专业的调研系统" />
 
 <script type="text/javascript" src="${ctx }/js/plugs/jquery-ui-1.10.3.custom/js/jquery-1.10.1.js"></script>
