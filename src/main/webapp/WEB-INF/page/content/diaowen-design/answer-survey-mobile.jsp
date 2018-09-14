@@ -20,6 +20,8 @@
 <script type="text/javascript" src="${ctx }/js/selSchool/chinaUniversitySelect.js"></script>
 <link href="${ctx }/css/m-select-school.css" rel="stylesheet" type="text/css" />
 
+<script type="text/javascript" src="${ctx }/js/input-check.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
 	
@@ -1023,6 +1025,22 @@ $(document).ready(function(){
 				validateStatus=quItemBody.find("input[type='checkbox']:checked")[0];
 			}else if(quType==="FILLBLANK"){
 				validateStatus=quItemBody.find(".fillblankInput").val()!="";
+                // 验证邮箱
+                var email = quItemBody.find("#emailInput").val();
+                if (email && !isEmail(email)) {
+                    quItemBody.find(".errorItem").remove();
+                    var emailError ="<div class=\"errorItem\"><label for=\"\" class=\"error\">邮件格式错误！</label></div>";
+                    $("#emailInput").parents(".surveyQuItemContent").append(emailError);
+                    validateStatus = false;
+                }
+                // 验证手机
+                var mobile = quItemBody.find("#mobileInput").val();
+                if (mobile && !isMobile(mobile)) {
+                    quItemBody.find(".errorItem").remove();
+                    var mobileError ="<div class=\"errorItem\"><label for=\"\" class=\"error\">手机号格式错误！</label></div>";
+                    $("#mobileInput").parents(".surveyQuItemContent").append(mobileError);
+                    validateStatus = false;
+                }
 			}else if(quType==="ORDERQU"){
 				//quItemBody.find(".quOrderByLeftUl label");
 				validateStatus=!quItemBody.find(".quOrderItemHidInput[value=0]")[0];
