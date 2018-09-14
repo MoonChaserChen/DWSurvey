@@ -14,7 +14,7 @@
 			
 			<div class="middle-body-content" style="text-align: center;">
 				<p class="msg1" style="font-size: 26px;">
-					提交失败，请稍后重试！
+					提交失败，请稍后再试！
 				</p>
 				<p style="text-align: center;">
 				<a href="${ctx }/wenjuan/${sId}.html" class="msg1" style="color: rgb(53, 117, 136);display: none;">返回重新填写</a>
