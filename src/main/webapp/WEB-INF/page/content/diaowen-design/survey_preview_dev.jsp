@@ -707,7 +707,7 @@ $(document).ready(function(){
 								<div class="p_DialogContentItem"><label><input type="checkbox" name="effectiveIp" value="1"> 每个IP只能答一次</label></div>
 								<div class="p_DialogContentItem"><label><input type="checkbox" name="rule" value="3"> 启用访问密码</label>
 								&nbsp;&nbsp;&nbsp;设置密码：<input type="text" size="10"  name="ruleCode" class="inputSytle_1"></div>
-								<div class="p_DialogContentItem"><label><input type="checkbox" name="refresh" value="1"> 有重复回答启用验证码</label></div>
+								<div class="p_DialogContentItem"><label><input type="checkbox" name="refresh" value="0"> 有重复回答启用验证码</label></div>
 								<div class="p_DialogContentItem" style="display: none;" ><label><input type="checkbox" name="mailOnly" value="1"> 只有邮件邀请唯一链接的受访者可回答</label></div>
 						</div>
 					</div>

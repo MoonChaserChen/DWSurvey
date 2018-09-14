@@ -145,8 +145,8 @@ public class ResponseAction extends ActionSupport {
 				|| directory.getSurveyState() != 1 ||
 				(anserNum!=null && ynEndNum==1 && anserNum >= endNum ) ||
 				(endTime!=null && ynEndTime==1 && endTime.getTime() < (new Date().getTime())) ){
-			request.setAttribute("surveyName", "目前该问卷已暂停收集，请稍后再试");
-			request.setAttribute("msg", "目前该问卷已暂停收集，请稍后再试");
+			request.setAttribute("surveyName", "目前已暂停收集，请稍后再试");
+			request.setAttribute("msg", "目前已暂停收集，请稍后再试");
 			return RESPONSE_MSG;
 		}
 		if (2 == rule) {
@@ -240,6 +240,11 @@ public class ResponseAction extends ActionSupport {
 
 		try {
 			String ipAddr = ipService.getIp(request);
+			Long answeredCount = surveyAnswerManager.getCount(surveyId);
+			Integer endNum = surveyAnswerManager.getEndNum(surveyId);
+			if (answeredCount >= endNum) {
+				return RELOAD_ANSWER_FAILURE;
+			}
 			long ipNum = surveyAnswerManager.getCountByIp(surveyId, ipAddr);
 			SurveyDirectory directory = directoryManager.getSurvey(surveyId);
 			SurveyDetail surveyDetail = directory.getSurveyDetail();
